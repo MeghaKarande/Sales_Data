@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sales Price Prediction System </title>
+</head>
+
+<body style="background-color: rgb(240, 150, 205);">
+
+<center>
+
+    <h1>Sales Price Prediction System</h1>
+
+    <form method = "GET" action = "/predict_charges">
+        <label> Item Weight : </label>
+        <input type = "text" name = "Item_Weight"
+        </select>
+
+        <br>
+        <br>
+
+        <label> Item Fat Content : </label>
+        <input type = "radio" name = "Item_Fat_Content" value = "Low Fat"> Low Fat  &nbsp; &nbsp; &nbsp;
+        <input type = "radio" name = "Item_Fat_Content" value = "Regular"> Regular 
+        </select>
+
+        <br>
+        <br>
+
+        <label> Item Visibility : </label>
+        <input type = "text" name = "Item_Visibility">
+        </select>
+
+
+        <br>
+        <br>
+
+        <label> Item MRP : </label>
+        <input type = "text" name = "Item_MRP">
+        </select>
+
+        <br>
+        <br>
+
+        <label> Outlet Establishment Year : </label>
+        <input type = "text" name = "Outlet_Establishment_Year">
+        </select>
+
+        <br>
+        <br>
+
+        <label> Outlet Size : </label>
+        <input type = "radio" name = "Outlet_Size" value = "Medium"> Medium  &nbsp; &nbsp; &nbsp;
+        <input type = "radio" name = "Outlet_Size" value = "Small"> Small  &nbsp; &nbsp; &nbsp;
+        <input type = "radio" name = "Outlet_Size" value = "High"> High  
+        </select>
+
+        <br>
+        <br>
+
+        <label>  Outlet Location Type : </label>
+        <input type = "radio" name = "Outlet_Location_Type" value = "Tier 3"> Tier 3  &nbsp; &nbsp; &nbsp;
+        <input type = "radio" name = "Outlet_Location_Type" value = "Tier 2"> Tier 2  &nbsp; &nbsp; &nbsp;
+        <input type = "radio" name = "Outlet_Location_Type" value = "Tier 1"> Tier 1  
+        </select>
+
+        <br>
+        <br>
+
+        <label> Item_Type : </label>
+        <label for = "Item_Type">
+        <select name = "Item_Type" id = "Item_Type">
+            <option> Baking Goods </option>
+            <option> Breads </option>
+            <option> Breakfast </option>
+            <option> Canned </option>
+            <option> Dairy </option>
+            <option> Frozen Foods </option>
+            <option> Fruits and Vegetables </option>
+            <option> Hard Drinks </option>
+            <option> Health and Hygiene </option>
+            <option> Household </option>
+            <option> Meat </option>
+            <option> Others </option>
+            <option> Seafood </option>
+            <option> Snack Foods </option>
+            <option> Soft Drinks </option>
+            <option> Starchy Foods </option>
+            <option> 
+        </select>
+
+        <br>
+        <br>
+
+        <label> Outlet Identifier : </label>
+        <label for = "Outlet_Identifier">
+        <select name = "Outlet_Identifier" id = "Outlet_Identifier">
+            <option> OUT010 </option>
+            <option> OUT013 </option>
+            <option> OUT017 </option>
+            <option> OUT018 </option>
+            <option> OUT019 </option>
+            <option> OUT027 </option>
+            <option> OUT035 </option>
+            <option> OUT045 </option>
+            <option> OUT046 </option>
+            <option> OUT049 </option>
+            <option> 
+        </select>
+
+        <br>
+        <br>
+
+        <label> Outlet Type : </label>
+        <label for = "Outlet_Type">
+        <select name = "Outlet_Type" id = "Outlet_Type">
+            <option> Grocery Store </option>
+            <option> Supermarket Type1 </option>
+            <option> Supermarket Type2 </option>
+            <option> Supermarket Type3 </option>
+            <option> 
+        </select>
+    
+        <br>
+        <br>
+
+        <input type = "submit" value = "SUBMIT">
+
+        <br>
+
+        <p> Your Item Outlet charges will be Rs. <b>{{ prediction }} /- only </p>
+
+
+    </form>
+
+</center>
+
+
+
+</body>
+</html>
+
